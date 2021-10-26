@@ -43,8 +43,8 @@ jobs:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
         run: |
-          git config --global user.email "nanosbot-github@nanos.io"
-          git config --global user.name "nanosbot"
+          git config --global user.email "torkild.alstad@multiconsult.no"
+          git config --global user.name "torkild-alstad"
           if [ -e yarn.lock ]; then
             yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
