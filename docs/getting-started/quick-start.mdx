@@ -14,17 +14,32 @@ import { ReferenceLink } from '@site/docs/components/_nanos.mdx';
 
 ## Step 1: Download the Server
 
-You have **three** options for downloading nanos world server:
+Use the following command to download the latest nanos world version from our [Github](https://github.com/nanos-world/nanos-world-server/releases/):
 
-1. Use the executable (*.exe*) already located at `nanos-world/Server/NanosWorldServer.exe` (if you downloaded the base game).
-2. Download **nanos world Dedicated Server** tool from Steam Client.
-3. Or use SteamCMD to [download nanos world Dedicated Server](./core-concepts/server-manual/server-installation.md).
+<Tabs
+  defaultValue="powershell"
+  values={[
+    {label: 'PowerShell', value: 'powershell'},
+    {label: 'Linux', value: 'linux'},
+  ]}>
+  <TabItem value="powershell">
 
-:::tip
+```shell
+Invoke-WebRequest -Uri "https://github.com/nanos-world/nanos-world-server/releases/latest/download/NanosWorldServer.exe" -OutFile NanosWorldServer.exe
+```
+
+  </TabItem>
+  <TabItem value="linux">
+
+```shell
+wget "https://github.com/nanos-world/nanos-world-server/releases/latest/download/NanosWorldServer"
+chmod +x NanosWorldServer
+```
+
+  </TabItem>
+</Tabs>
 
 The server is as simple as one executable file `NanosWorldServer.exe`. After downloaded it, run it once to generate the proper and initial folders `Assets`, `Packages` and `Config.toml` file, keep your server open for following this guide!
-
-:::
 
 ## Step 2: Creating a Basic Package
 
