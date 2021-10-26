@@ -9,7 +9,7 @@ module.exports = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'nanos-world',
+  organizationName: 'Multiconsult-Group',
   projectName: 'docs',
   trailingSlash: false,
 
@@ -110,9 +110,9 @@ module.exports = {
         blog: {
           showReadingTime: true,
           editUrl: 'https://github.com/nanos-world/docs/edit/master/',
-          blogTitle: 'nanos world news!',
-          blogDescription: 'All official news from nanos world!',
-          blogSidebarTitle: 'nanos world news',
+          blogTitle: 'Multiconsult news!',
+          blogDescription: 'All official news from product X!',
+          blogSidebarTitle: 'product X news',
           blogSidebarCount: 'ALL',
         },
         theme: {
