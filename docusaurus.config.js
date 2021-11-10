@@ -4,7 +4,7 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
   title: 'Multiconsult',
   tagline: 'Multiconsult',
-  url: 'https://www.multiconsultgroup.com/',
+  url: 'https://doc-multiconsult.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
